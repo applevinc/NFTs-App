@@ -11,4 +11,6 @@ class UploadedListProvider extends ChangeNotifier {
 
   List<Upload> _items = [];
   List<Upload> get items => _items;
+
+  pushFileToIPFS(){}
 }
