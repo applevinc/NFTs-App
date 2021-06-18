@@ -10,7 +10,7 @@ class AppTheme {
       appBarTheme: AppBarTheme(
         backgroundColor: Colors.white,
         elevation: 0.0,
-        systemOverlayStyle: SystemUiOverlayStyle(statusBarColor: Colors.white),
+        //systemOverlayStyle: SystemUiOverlayStyle(statusBarColor: Colors.white),
       ),
       scaffoldBackgroundColor: AppColors.grey,
     );
