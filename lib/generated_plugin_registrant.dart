@@ -4,6 +4,7 @@
 
 // ignore_for_file: lines_longer_than_80_chars
 
+// ignore: implementation_imports
 import 'package:file_picker/src/file_picker_web.dart';
 
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
