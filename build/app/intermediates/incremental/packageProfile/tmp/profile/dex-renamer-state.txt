@@ -1,4 +1,4 @@
-#Fri Jun 18 13:34:54 WAT 2021
+#Tue Jul 06 09:36:55 WAT 2021
 base.0=C\:\\Users\\USER\\Desktop\\FLUTTER PROJECTS\\nfts\\build\\app\\intermediates\\dex\\profile\\mergeDexProfile\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

@@ -33,8 +33,8 @@ class FileProvider extends ChangeNotifier {
     }
   }
 
-  clear() {
-    _selectedFile = File('');
+  clearFile() {
+    _selectedFile.delete();
     fileState = FileState.select;
     notifyListeners();
   }

@@ -30,19 +30,22 @@ class _Body extends StatelessWidget {
     var fileProvider = context.watch<FileProvider>();
     var uploadedListProvider = context.watch<UploadedListProvider>();
 
-    return Center(
-      child: ListView(
-        physics: BouncingScrollPhysics(),
-        padding: EdgeInsets.only(top: 20, right: 20, left: 20),
-        children: [
-          (fileProvider.fileState == FileState.select)
-              ? SelectImageWidget()
-              : DisplayImageWidget(),
-          (uploadedListProvider.uploadedListState != UploadedListState.empty)
+    return ListView(
+      physics: BouncingScrollPhysics(),
+      padding: EdgeInsets.only(top: 20, right: 20, left: 20),
+      children: [
+        (fileProvider.fileState == FileState.select)
+            ? SelectImageWidget()
+            : DisplayImageWidget(),
+        Visibility(
+          visible: (uploadedListProvider.uploadedListState != UploadedListState.empty)
+              ? false
+              : true,
+          child: (uploadedListProvider.uploadedListState != UploadedListState.empty)
               ? RecentUploads()
               : SizedBox.shrink(),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }

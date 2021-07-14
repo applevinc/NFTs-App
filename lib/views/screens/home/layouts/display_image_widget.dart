@@ -38,7 +38,7 @@ class DisplayImageWidget extends StatelessWidget {
                     label: 'Upload',
                     color: AppColors.deepRed,
                     onTap: () {
-                      // upload to ipfs
+                      //TODO: upload to ipfs
                     },
                   ),
                   SizedBox(width: 10),
@@ -46,7 +46,7 @@ class DisplayImageWidget extends StatelessWidget {
                     label: 'Clear',
                     color: Colors.lightBlue,
                     onTap: () {
-                      fileProvider.clear();
+                      fileProvider.clearFile();
                     },
                   ),
                 ],

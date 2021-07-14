@@ -32,6 +32,8 @@ dependencies:
   sizer: ^2.0.13
   file_picker: ^3.0.2+2
   provider: ^5.0.0
+  web3dart: ^2.1.4
+  http: ^0.13.3
 
 dev_dependencies:
   flutter_test:
